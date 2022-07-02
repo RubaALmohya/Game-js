@@ -6,7 +6,7 @@ var myScore;
 
 
 function startGame1() {
-    myGamePiece = new component (30, 30, "images/mario.gif", 10, 120, "image");
+    myGamePiece = new component (30, 30, "mario.gif", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     // myGamePiece = new component(30, 30, "red", 10, 120);
     // myGamePiece.gravity = 0.05;
@@ -18,7 +18,7 @@ function startGame1() {
 }
 function startGame2(){
     
-    myGamePiece = new component (30, 30, "images/bo.gif", 10, 120, "image");
+    myGamePiece = new component (30, 30, "bo.gif", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     // myGamePiece = new component(30, 30, "red", 10, 120);
     // myGamePiece.gravity = 0.05;
@@ -30,7 +30,7 @@ function startGame2(){
 }
 function startGame3(){
     
-    myGamePiece = new component (30, 30, "images/luigi.png", 10, 120, "image");
+    myGamePiece = new component (30, 30, "luigi.png", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     // myGamePiece = new component(30, 30, "red", 10, 120);
     // myGamePiece.gravity = 0.05;
@@ -42,7 +42,7 @@ function startGame3(){
 }
 function startGame4(){
     
-    myGamePiece = new component (30, 30, "images/yoshi.png", 10, 120, "image");
+    myGamePiece = new component (30, 30, "yoshi.png", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     // myGamePiece = new component(30, 30, "red", 10, 120);
     // myGamePiece.gravity = 0.05;
@@ -155,8 +155,8 @@ function updateGameArea() {
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(25, height, "/images/blockN.png", x, 0,"image"));
-        myObstacles.push(new component(25, x - height - gap, "/images/blockS.png", x, height + gap,"image"));
+        myObstacles.push(new component(25, height, "blockN.png", x, 0,"image"));
+        myObstacles.push(new component(25, x - height - gap, "blockS.png", x, height + gap,"image"));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
